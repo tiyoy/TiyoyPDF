@@ -8,7 +8,7 @@ import { Footer } from '@/components/layout/Footer';
 import { ToolGrid } from '@/components/tools/ToolGrid';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
-import { TypingText } from '@/components/ui/TypingText';
+import { TypingText, TypingLoopText } from '@/components/ui/TypingText';
 import { getAllTools, getToolsByCategory, getPopularTools } from '@/config/tools';
 import { type Locale } from '@/lib/i18n/config';
 import { CATEGORY_INFO, type ToolCategory } from '@/types/tool';
@@ -81,6 +81,9 @@ export default function HomePageClient({ locale, localizedToolContent }: HomePag
     'optimize-repair',
     'secure-pdf',
   ];
+  // Kata yang diketik bergantian di judul hero (jika tersedia di file bahasa)
+  const heroWords: string[] = t.has('home.hero.words') ? (t.raw('home.hero.words') as string[]) : [];
+
 
   return (
     <div className="min-h-screen flex flex-col bg-[hsl(var(--color-background))]">
@@ -111,7 +114,14 @@ export default function HomePageClient({ locale, localizedToolContent }: HomePag
 
               {/* Hero Title */}
               <h1 id="hero-title" className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                <TypingText text={t('home.hero.title')} className="text-gradient pb-2" />
+                {heroWords.length > 0 ? (
+                  <>
+                    <span>{t('home.hero.prefix')}</span>{' '}
+                    <TypingLoopText words={heroWords} className="text-gradient pb-2" />
+                  </>
+                ) : (
+                  <TypingText text={t('home.hero.title')} className="text-gradient pb-2" />
+                )}
               </h1>
 
               {/* Hero Subtitle */}

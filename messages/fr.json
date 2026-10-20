@@ -1171,6 +1171,8 @@
   "home": {
     "hero": {
       "title": "Outils PDF Professionnels",
+      "prefix": "Outils PDF",
+      "words": ["Professionnels", "Complets", "Gratuits"],
       "highlight": "Outils Professionnels",
       "subtitle": "Traitement PDF gratuit, privé et puissant dans votre navigateur",
       "cta": "Commencer"

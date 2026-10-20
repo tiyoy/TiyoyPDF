@@ -1171,6 +1171,8 @@
   "home": {
     "hero": {
       "title": "Strumenti PDF Professionali",
+      "prefix": "Strumenti PDF",
+      "words": ["Professionali", "Completi", "Gratuiti"],
       "highlight": "Strumenti Professionali",
       "subtitle": "Elaborazione PDF gratuita, privata e potente nel tuo browser",
       "cta": "Inizia"

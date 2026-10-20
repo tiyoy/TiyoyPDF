@@ -1171,6 +1171,8 @@
   "home": {
     "hero": {
       "title": "전문 PDF 도구",
+      "prefix": "PDF 도구:",
+      "words": ["전문가급", "완전한 기능", "무료"],
       "highlight": "전문 도구",
       "subtitle": "브라우저에서 무료로 안전하고 강력하게 PDF 처리",
       "cta": "시작하기"

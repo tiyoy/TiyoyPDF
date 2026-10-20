@@ -1171,6 +1171,8 @@
   "home": {
     "hero": {
       "title": "Alat PDF Profesional",
+      "prefix": "Alat PDF yang",
+      "words": ["Profesional", "Complete", "Gratis"],
       "highlight": "Alat Profesional",
       "subtitle": "Pemrosesan PDF gratis, pribadi, dan kuat di browser Anda",
       "cta": "Mulai Sekarang"

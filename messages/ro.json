@@ -1171,6 +1171,8 @@
   "home": {
     "hero": {
       "title": "Instrumente PDF Profesionale",
+      "prefix": "Instrumente PDF",
+      "words": ["Profesionale", "Complete", "Gratuite"],
       "highlight": "Instrumente Profesionale",
       "subtitle": "Procesare PDF gratuită, privată și puternică în browser-ul tău",
       "cta": "Începe Acum"

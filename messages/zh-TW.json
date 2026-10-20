@@ -1185,6 +1185,8 @@
   "home": {
     "hero": {
       "title": "專業PDF工具",
+      "prefix": "PDF工具，",
+      "words": ["專業", "完整", "免費"],
       "highlight": "專業工具",
       "subtitle": "在瀏覽器中免費、隱私、強大的PDF處理",
       "cta": "開始使用"

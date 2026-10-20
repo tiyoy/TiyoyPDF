@@ -1185,6 +1185,8 @@
   "home": {
     "hero": {
       "title": "Professional PDF Tools",
+      "prefix": "PDF tools that are",
+      "words": ["Professional", "Complete", "Free"],
       "highlight": "Professional Tools",
       "subtitle": "Free, private, and powerful PDF processing in your browser",
       "cta": "Get Started"
