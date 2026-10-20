@@ -1172,7 +1172,7 @@
     "hero": {
       "title": "Professionelle PDF-Werkzeuge",
       "prefix": "PDF-Tools:",
-      "words": ["Professionell", "Komplett", "Kostenlos"],
+      "words": "Professionell|Komplett|Kostenlos",
       "highlight": "Professionelle Werkzeuge",
       "subtitle": "Kostenlose, private und leistungsstarke PDF-Verarbeitung in Ihrem Browser",
       "cta": "Loslegen"

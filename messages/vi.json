@@ -1172,7 +1172,7 @@
     "hero": {
       "title": "Công cụ PDF Chuyên nghiệp",
       "prefix": "Công cụ PDF",
-      "words": ["Chuyên nghiệp", "Đầy đủ", "Miễn phí"],
+      "words": "Chuyên nghiệp|Đầy đủ|Miễn phí",
       "highlight": "Công cụ Chuyên nghiệp",
       "subtitle": "Xử lý PDF miễn phí, riêng tư và mạnh mẽ ngay trong trình duyệt",
       "cta": "Bắt đầu Ngay"

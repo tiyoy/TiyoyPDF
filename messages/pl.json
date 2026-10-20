@@ -1186,7 +1186,7 @@
     "hero": {
       "title": "Profesjonalne narzędzia PDF",
       "prefix": "Narzędzia PDF",
-      "words": ["Profesjonalne", "Kompletne", "Darmowe"],
+      "words": "Profesjonalne|Kompletne|Darmowe",
       "highlight": "Profesjonalne narzędzia",
       "subtitle": "Bezpłatne, prywatne i wydajne przetwarzanie PDF w Twojej przeglądarce",
       "cta": "Rozpocznij"

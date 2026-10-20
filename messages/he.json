@@ -1186,7 +1186,7 @@
     "hero": {
       "title": "Professional PDF Tools",
       "prefix": "כלי PDF",
-      "words": ["מקצועיים", "מלאים", "חינמיים"],
+      "words": "מקצועיים|מלאים|חינמיים",
       "highlight": "Professional Tools",
       "subtitle": "Free, private, and powerful PDF processing in your browser",
       "cta": "Get Started"

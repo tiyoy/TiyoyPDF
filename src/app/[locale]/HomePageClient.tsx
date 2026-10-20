@@ -82,7 +82,9 @@ export default function HomePageClient({ locale, localizedToolContent }: HomePag
     'secure-pdf',
   ];
   // Kata yang diketik bergantian di judul hero (jika tersedia di file bahasa)
-  const heroWords: string[] = t.has('home.hero.words') ? (t.raw('home.hero.words') as string[]) : [];
+  const heroWords: string[] = t.has('home.hero.words')
+    ? t('home.hero.words').split('|').map((w) => w.trim()).filter(Boolean)
+    : [];
 
 
   return (

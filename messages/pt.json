@@ -1172,7 +1172,7 @@
     "hero": {
       "title": "Ferramentas PDF Profissionais",
       "prefix": "Ferramentas PDF",
-      "words": ["Profissionais", "Completas", "Gratuitas"],
+      "words": "Profissionais|Completas|Gratuitas",
       "highlight": "Ferramentas Profissionais",
       "subtitle": "Processamento de PDF gratuito, privado e poderoso no seu navegador",
       "cta": "Começar"

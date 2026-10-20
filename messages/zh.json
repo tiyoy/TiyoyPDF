@@ -1186,7 +1186,7 @@
     "hero": {
       "title": "专业PDF工具",
       "prefix": "PDF工具，",
-      "words": ["专业", "完整", "免费"],
+      "words": "专业|完整|免费",
       "highlight": "专业工具",
       "subtitle": "在浏览器中免费、私密、强大的PDF处理",
       "cta": "开始使用"

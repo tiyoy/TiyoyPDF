@@ -1186,7 +1186,7 @@
     "hero": {
       "title": "Profesionální nástroje PDF",
       "prefix": "PDF nástroje, které jsou",
-      "words": ["profesionální", "kompletní", "zdarma"],
+      "words": "profesionální|kompletní|zdarma",
       "highlight": "Profesionální nástroje",
       "subtitle": "Bezplatné, soukromé a výkonné zpracování PDF ve vašem prohlížeči",
       "cta": "Začít"
