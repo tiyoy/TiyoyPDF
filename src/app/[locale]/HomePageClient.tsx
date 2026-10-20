@@ -115,11 +115,13 @@ export default function HomePageClient({ locale, localizedToolContent }: HomePag
               </div>
 
               {/* Hero Title */}
-              <h1 id="hero-title" className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+              <h1 id="hero-title" className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-center">
                 {heroWords.length > 0 ? (
                   <>
-                    <span>{t('home.hero.prefix')}</span>{' '}
-                    <TypingLoopText words={heroWords} className="text-gradient pb-2" />
+                    <span className="block">{t('home.hero.prefix')}</span>
+                    <span className="block mt-1">
+                      <TypingLoopText words={heroWords} className="text-gradient pb-2" />
+                    </span>
                   </>
                 ) : (
                   <TypingText text={t('home.hero.title')} className="text-gradient pb-2" />
