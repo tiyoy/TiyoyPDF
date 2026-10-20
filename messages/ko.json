@@ -85,6 +85,7 @@
     "footer": {
       "footer": "© 2025 TiyoyPDF. All rights reserved.",
       "copyright": "© {year} TiyoyPDF. All rights reserved.",
+      "credit": "Made with good intentions and a cup of coffee by",
       "privacyBadge": "100% 프라이빗 - 파일이 기기를 떠나지 않습니다",
       "madeWith": "<Heart /> 및 <Nextjs />로 제작"
     },

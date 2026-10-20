@@ -163,11 +163,19 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
         </div>
 
         {/* Copyright */}
-        <div className="pt-8 border-t border-[hsl(var(--color-border))] flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-[hsl(var(--color-border))] flex flex-col items-center justify-center gap-4 text-center">
           <p className="text-sm text-[hsl(var(--color-muted-foreground))]">
-            &copy; {currentYear} {t('brand')}. {t('footer.copyright', { year: '' }).replace(/^\d{4}\s*/, '')}
+            &copy; {currentYear} {t('brand')} - {t('footer.credit')}{' '}
+            <a
+              href="https://www.instagram.com/cecep.maulana_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-[hsl(var(--color-foreground))] hover:text-[hsl(var(--color-primary))] transition-colors"
+            >
+              Cecep Maulanaツ
+            </a>
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-center gap-6">
             <Link href={`/${locale}/terms`} className="text-xs text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]">Terms</Link>
             <Link href={`/${locale}/privacy`} className="text-xs text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]">Privacy</Link>
             <Link href={`/${locale}/cookies`} className="text-xs text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]">Cookies</Link>

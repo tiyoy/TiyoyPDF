@@ -85,6 +85,7 @@
     "footer": {
       "footer": "© 2025 TiyoyPDF. Hak cipta dilindungi undang-undang.",
       "copyright": "© {year} TiyoyPDF. Hak cipta dilindungi undang-undang.",
+      "credit": "Dibuat dengan niat baik dan secangkir kopi oleh",
       "privacyBadge": "100% Pribadi - File tidak pernah meninggalkan perangkat Anda",
       "madeWith": "Dibuat dengan <Heart /> dan <Nextjs />"
     },

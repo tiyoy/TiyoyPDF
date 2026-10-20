@@ -85,6 +85,7 @@
     "footer": {
       "footer": "© 2025 TiyoyPDF. Tutti i diritti riservati.",
       "copyright": "© {year} TiyoyPDF. Tutti i diritti riservati.",
+      "credit": "Made with good intentions and a cup of coffee by",
       "privacyBadge": "100% Privato - I file non lasciano mai il tuo dispositivo",
       "madeWith": "Fatto con <Heart /> e <Nextjs />"
     },

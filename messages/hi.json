@@ -102,6 +102,7 @@
     "footer": {
       "footer": "© 2025 TiyoyPDF. सर्वाधिकार सुरक्षित।",
       "copyright": "© {year} TiyoyPDF. सर्वाधिकार सुरक्षित।",
+      "credit": "Made with good intentions and a cup of coffee by",
       "privacyBadge": "100% सुरक्षित एवं निजी - फ़ाइलें आपके डिवाइस से कभी बाहर नहीं जाती हैं",
       "madeWith": "<Heart /> और <Nextjs /> के साथ निर्मित"
     },
