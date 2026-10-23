@@ -3,6 +3,7 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { FileUploader } from '../FileUploader';
+import { listenForLaunchedPdf, takePendingPdf } from '@/lib/pending-file';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Download, X, CopyCheck, Printer, RefreshCw, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
@@ -98,6 +99,18 @@ export function PDFReaderTool({ className = '' }: PDFReaderToolProps) {
             setError(null);
         }
     }, [pdfUrl]);
+
+    // File PDF dari luar aplikasi ("Buka dengan TiyoyPDF" di PWA yang terpasang)
+    const filesHandlerRef = useRef(handleFilesSelected);
+    useEffect(() => {
+        filesHandlerRef.current = handleFilesSelected;
+    }, [handleFilesSelected]);
+
+    useEffect(() => {
+        const pending = takePendingPdf();
+        if (pending) filesHandlerRef.current([pending]);
+        return listenForLaunchedPdf((launched) => filesHandlerRef.current([launched]));
+    }, []);
 
     const handleUploadError = useCallback((errorMessage: string) => {
         setError(errorMessage);

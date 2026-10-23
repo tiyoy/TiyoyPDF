@@ -3035,4 +3035,31 @@ export const toolContentId: Record<string, ToolContent> = {
     faq: toolContentEn['photo-tiling-prepress'].faq,
   },
 
+  'scan-document': {
+    title: "Pindai Dokumen",
+    metaDescription: "Pindai dokumen dengan kamera HP atau komputer, atau dari foto, lalu simpan sebagai PDF yang rapi. Gratis, privat, dan diproses di browser.",
+    keywords: ["pindai dokumen", "scan dokumen", "scan ke pdf", "foto dokumen jadi pdf", "kamera ke pdf", "scanner hp"],
+    description: `
+      <p>Pindai Dokumen mengubah foto kertas menjadi PDF yang rapi dan siap dibagikan. Buka kamera lalu ambil tiap halaman, atau pilih foto yang sudah ada di galeri.</p>
+      <p>Filter ala scanner menghilangkan bayangan dan membuat kertas tampak putih, sehingga tulisan tetap tajam dan mudah dibaca. Kamu bisa memutar, mengurutkan, atau menghapus halaman sebelum menyimpan.</p>
+      <p>Semua proses berjalan di browser kamu. Foto tidak pernah diunggah ke server mana pun.</p>
+    `,
+    howToUse: [
+      { step: 1, title: "Tambah halaman", description: "Buka kamera lalu ambil tiap halaman, pakai kamera HP, atau pilih foto dan file gambar dari perangkatmu." },
+      { step: 2, title: "Periksa pratinjau", description: "Putar, urutkan ulang, atau hapus halaman sampai urutan dan arahnya benar." },
+      { step: 3, title: "Pilih filter", description: "Pilih Dokumen untuk teks hitam putih yang tajam, Warna cerah untuk mempertahankan warna, atau Skala abu-abu dan Asli." },
+      { step: 4, title: "Buat PDF", description: "Pilih ukuran halaman dan kualitas, klik Buat PDF, lalu unduh filenya." },
+    ],
+    useCases: [
+      { title: "Berkas dan formulir", description: "Digitalkan kontrak, struk, dan formulir hanya dengan HP.", icon: "file-text" },
+      { title: "Sekolah dan kuliah", description: "Pindai catatan, halaman buku, dan tugas menjadi satu PDF.", icon: "book-open" },
+      { title: "Arsip kantor", description: "Ubah dokumen cetak menjadi file PDF untuk arsip digital.", icon: "folder" },
+    ],
+    faq: [
+      { question: "Apakah dokumen saya diunggah ke server?", answer: "Tidak. Pemindaian dan pembuatan PDF berjalan sepenuhnya di browser, jadi foto tetap ada di perangkatmu." },
+      { question: "Kenapa kamera tidak bisa dibuka?", answer: "Izinkan akses kamera di browser. Kamera hanya berfungsi di halaman aman (HTTPS). Kamu juga bisa memakai tombol Pakai kamera HP atau Pilih foto atau file." },
+      { question: "Apakah tepi dokumen dipotong otomatis?", answer: "Belum. Untuk hasil terbaik, masukkan seluruh halaman ke dalam bingkai, foto lurus dari atas, dan pastikan cahaya cukup." },
+    ],
+  },
+
 };

@@ -102,6 +102,7 @@ export { FontToOutlineTool, type FontToOutlineToolProps } from './font-to-outlin
 export { ExtractTablesTool, type ExtractTablesToolProps } from './extract-tables';
 export { OCGManagerTool, type OCGManagerToolProps } from './ocg-manager';
 export { PDFReaderTool, type PDFReaderToolProps } from './pdf-reader';
+export { ScanDocumentTool, type ScanDocumentToolProps } from './scan-document';
 
 // PDF Overlay Tool
 export { OverlayPDFTool, type OverlayPDFToolProps } from './overlay/OverlayPDFTool';

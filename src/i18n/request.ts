@@ -1,6 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
 import { routing } from './routing';
-import { mergeWithFallback } from '@/lib/i18n/fallback';
+import { mergeWithFallback, type NestedMessages } from '@/lib/i18n/fallback';
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // This typically corresponds to the `[locale]` segment
@@ -31,7 +31,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
   // This ensures all keys are available, falling back to English for missing ones
   const messages = locale === 'en' 
     ? englishMessages 
-    : mergeWithFallback(localeMessages, englishMessages);
+    : mergeWithFallback(
+        localeMessages as unknown as NestedMessages,
+        englishMessages as unknown as NestedMessages,
+      );
 
   return {
     locale,

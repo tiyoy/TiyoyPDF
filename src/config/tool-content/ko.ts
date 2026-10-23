@@ -7775,5 +7775,33 @@ export const toolContentKo: Record<string, ToolContent> = {
         "answer": "최신 웹 표준(HTML5)을 준수하는 크롬, 사파리, 엣지, 파이어폭스 등 현대적 브라우저를 갖춘 모바일이나 데스크톱 디바이스라면 기종을 불문하고 쾌적하게 잘 열립니다."
       }
     ]
-  }
+  },
+
+  'scan-document': {
+    title: "문서 스캔",
+    metaDescription: "휴대폰 카메라나 사진으로 문서를 스캔하여 브라우저에서 바로 깔끔한 PDF로 저장하세요.",
+    keywords: ["문서 스캔", "scan document", "scan to pdf"],
+    description: `
+      <p>Scan Document turns photos of paper into a clean, shareable PDF. Open your camera, capture each page, or choose existing photos from your gallery.</p>
+      <p>Scanner-style filters remove shadows and make the paper white, so text stays sharp and easy to read. You can rotate, reorder, or delete pages before saving.</p>
+      <p>Everything happens in your browser. Your photos are never uploaded to any server.</p>
+    `,
+    howToUse: [
+      { step: 1, title: "Add pages", description: "Open the camera and capture each page, use your phone camera, or choose photos and image files from your device." },
+      { step: 2, title: "Check the preview", description: "Rotate, reorder, or delete pages until the order and direction look right." },
+      { step: 3, title: "Pick a filter", description: "Choose Document for sharp black and white text, Bright color to keep colors, or Grayscale or Original." },
+      { step: 4, title: "Create the PDF", description: "Select the page size and quality, click Create PDF, then download your file." },
+    ],
+    useCases: [
+      { title: "Paperwork and forms", description: "Digitize contracts, receipts, and forms with just your phone.", icon: "file-text" },
+      { title: "School and study", description: "Scan notes, textbook pages, and assignments into one PDF.", icon: "book-open" },
+      { title: "Office archive", description: "Turn printed documents into searchable-ready PDF files for your archive.", icon: "folder" },
+    ],
+    faq: [
+      { question: "Is my document uploaded anywhere?", answer: "No. Scanning and PDF creation run entirely in your browser, so your photos stay on your device." },
+      { question: "Why does the camera not open?", answer: "Allow camera access in your browser. The camera only works on secure pages (HTTPS). You can also use the Use phone camera or Choose photos buttons." },
+      { question: "Does it crop the document edges automatically?", answer: "Not yet. For best results, keep the whole page inside the frame and shoot straight from above in good light." },
+    ],
+  },
+
 };

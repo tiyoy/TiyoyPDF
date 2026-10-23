@@ -3508,6 +3508,34 @@ export const toolContentZh: Record<string, ToolContent> = {
       { question: '相纸边缘会有裁切留白吗？', answer: '是的。算法在设计拼版矩阵时，已经自动预留了 standard 4 毫米的“物理打印边距（Print Safe Margin）”，避免各类家用和商业相纸打印机由于物理边缘卡位导致照片边缘被切。' },
     ],
   },
+
+  'scan-document': {
+    title: "文档扫描",
+    metaDescription: "使用手机相机或照片扫描文档，直接在浏览器中保存为清晰的 PDF。",
+    keywords: ["文档扫描", "scan document", "scan to pdf"],
+    description: `
+      <p>Scan Document turns photos of paper into a clean, shareable PDF. Open your camera, capture each page, or choose existing photos from your gallery.</p>
+      <p>Scanner-style filters remove shadows and make the paper white, so text stays sharp and easy to read. You can rotate, reorder, or delete pages before saving.</p>
+      <p>Everything happens in your browser. Your photos are never uploaded to any server.</p>
+    `,
+    howToUse: [
+      { step: 1, title: "Add pages", description: "Open the camera and capture each page, use your phone camera, or choose photos and image files from your device." },
+      { step: 2, title: "Check the preview", description: "Rotate, reorder, or delete pages until the order and direction look right." },
+      { step: 3, title: "Pick a filter", description: "Choose Document for sharp black and white text, Bright color to keep colors, or Grayscale or Original." },
+      { step: 4, title: "Create the PDF", description: "Select the page size and quality, click Create PDF, then download your file." },
+    ],
+    useCases: [
+      { title: "Paperwork and forms", description: "Digitize contracts, receipts, and forms with just your phone.", icon: "file-text" },
+      { title: "School and study", description: "Scan notes, textbook pages, and assignments into one PDF.", icon: "book-open" },
+      { title: "Office archive", description: "Turn printed documents into searchable-ready PDF files for your archive.", icon: "folder" },
+    ],
+    faq: [
+      { question: "Is my document uploaded anywhere?", answer: "No. Scanning and PDF creation run entirely in your browser, so your photos stay on your device." },
+      { question: "Why does the camera not open?", answer: "Allow camera access in your browser. The camera only works on secure pages (HTTPS). You can also use the Use phone camera or Choose photos buttons." },
+      { question: "Does it crop the document edges automatically?", answer: "Not yet. For best results, keep the whole page inside the frame and shoot straight from above in good light." },
+    ],
+  },
+
 };
 
 

@@ -335,6 +335,18 @@ export const tools: Tool[] = [
     relatedTools: ['jpg-to-pdf', 'png-to-pdf', 'pdf-to-jpg'],
   },
   {
+    id: 'scan-document',
+    slug: 'scan-document',
+    icon: 'scan-line',
+    category: 'convert-to-pdf',
+    acceptedFormats: ['.jpg', '.jpeg', '.png', '.webp', '.bmp', '.heic'],
+    outputFormat: 'pdf',
+    maxFileSize: DEFAULT_MAX_FILE_SIZE,
+    maxFiles: 100,
+    features: ['camera-capture', 'photo-upload', 'scan-filters', 'rotate', 'page-order'],
+    relatedTools: ['image-to-pdf', 'ocr-pdf', 'pdf-reader'],
+  },
+  {
     id: 'png-to-pdf',
     slug: 'png-to-pdf',
     icon: 'image-up',

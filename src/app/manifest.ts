@@ -12,7 +12,7 @@ import { siteConfig } from '@/config/site';
 export const dynamic = 'force-static';
 
 export default function manifest(): MetadataRoute.Manifest {
-  return {
+  const base: MetadataRoute.Manifest = {
     name: siteConfig.name,
     short_name: 'TiyoyPDF',
     description: siteConfig.description,
@@ -72,4 +72,17 @@ export default function manifest(): MetadataRoute.Manifest {
       },
     ],
   };
+
+  // Daftarkan TiyoyPDF sebagai pembuka file PDF (Chrome/Edge desktop setelah aplikasi dipasang).
+  // Tipe MetadataRoute.Manifest belum memuat `file_handlers`, jadi ditambahkan lewat cast.
+  return {
+    ...base,
+    file_handlers: [
+      {
+        action: '/open-pdf/',
+        accept: { 'application/pdf': ['.pdf'] },
+        launch_type: 'single-client',
+      },
+    ],
+  } as MetadataRoute.Manifest;
 }

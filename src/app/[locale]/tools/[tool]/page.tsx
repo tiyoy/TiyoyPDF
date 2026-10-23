@@ -96,6 +96,7 @@ import { FontToOutlineTool } from '@/components/tools/font-to-outline';
 import { ExtractTablesTool } from '@/components/tools/extract-tables';
 import { OCGManagerTool } from '@/components/tools/ocg-manager';
 import { PDFReaderTool } from '@/components/tools/pdf-reader';
+import { ScanDocumentTool } from '@/components/tools/scan-document';
 import { DigitalSignPDFTool } from '@/components/tools/digital-sign';
 import { ValidateSignatureTool } from '@/components/tools/validate-signature';
 import { AIPDFReflowerTool } from '@/components/tools/ai-pdf-reflower/AIPDFReflowerTool';
@@ -302,6 +303,8 @@ export default async function ToolPageRoute({ params }: ToolPageParams) {
       // Convert to PDF tools
       case 'image-to-pdf':
         return <ImageToPDFTool />;
+      case 'scan-document':
+        return <ScanDocumentTool />;
       case 'jpg-to-pdf':
         return <ImageToPDFTool imageType="jpg" />;
       case 'png-to-pdf':
